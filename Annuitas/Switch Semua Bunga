@@ -1,0 +1,15 @@
+akumulasi <- function(num, k,i,t,m) 
+  switch(num, 
+         satu = {
+           nilaiakumulasibungatunggal = k*(1+(i*t))
+           print(nilaiakumulasibungatunggal)
+         },
+         dua = {
+           nilaiakumulasibungamajemuknominal = k*(1+(i/m))^(m*t)
+           print(nilaiakumulasibungamajemuknominal)
+         },
+         tiga = {
+           nilaiakumulasibungamajemukkontinu = k*exp(i*t)
+           print(nilaiakumulasibungamajemukkontinu)
+         }
+  )
