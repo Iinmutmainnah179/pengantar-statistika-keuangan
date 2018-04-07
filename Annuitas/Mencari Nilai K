@@ -1,0 +1,16 @@
+setwd("G:\\SEMESTER 4\\TUGAS\\PSK")
+mencarinilaiK <- function(num,i,t,nilai,m=TRUE,n=m*t,v=1/(1+j),j=i/m) 
+  switch(num, 
+         satu = {
+           K_PVakhir = nilai/(((1-(v^n))/j))
+           K_Snakhir = nilai/(((((1+j)^n)-1)/j))
+           cat("Nilai K Jika diket anuitas akhir adalah",K_PVakhir,"\n")
+           cat("nilai K jika diket anuitas akhir adalah",K_Snakhir,"\n")
+         },
+         dua = {
+           K_PVawal = nilai/(((1-(v^n))/(j*(v))))
+           K_Snawal = nilai/(((((1+j)^n)-1)/(j*v)))
+           cat("Nilai K jika diket pv anuitas awal adalah",K_PVawal,"\n")
+           cat("nilai K jika diket nilai akumulasi anuitas awal ",K_Snawal,"\n")
+         }
+  )
