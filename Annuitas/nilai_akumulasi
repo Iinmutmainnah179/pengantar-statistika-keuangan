@@ -1,0 +1,3 @@
+iin<-function(k,i,t,m) {
+nilaiakumulasi=k*(1+(i/m))^(m*t)
+return(nilaiakumulasi)}
