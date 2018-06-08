@@ -1,0 +1,5 @@
+setwd("G:\\SEMESTER 4\\TUGAS\\PSK")
+obligasi <- function(f,r,i,m,t,n=t*m,ibin=i/m,rbin=r/m,vbin=1/(1+ibin)){
+  HargaObligasi= f*rbin*((1-(vbin^n))/ibin)+f*(vbin^n)
+  return(HargaObligasi)
+}
